@@ -9,8 +9,8 @@ import requests
 from streamlit_lottie import st_lottie  
 
 # Load the pre-trained model and vectorizer
-model = pickle.load(open(r'C:\Users\DELL\Desktop\Pro\email_class.pkl', 'rb'))
-vectorizer = pickle.load(open(r'C:\Users\DELL\Desktop\Pro\count_vect', 'rb'))
+model = pickle.load(open(r'email_class.pkl', 'rb'))
+vectorizer = pickle.load(open(r'count_vect', 'rb'))
 
 # Load dataset for visualization
 df = pd.read_csv('Spam Email Classifier.csv')
